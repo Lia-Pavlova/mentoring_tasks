@@ -26,14 +26,14 @@ function sendRequest(method, url, body = null) {
 }
 
 sendRequest('GET', requestURL)
-  .then(data => console.log(data))
-  .catch(err => console.log(err))
+  .then((data) => console.log(data))
+  .catch((err) => console.log(err))
 
 const body = {
   name: 'Lia',
-  tasks: 20
+  tasks: 20,
 }
 
 sendRequest('POST', requestURL, body)
-  .then(data => console.log(data))
-  .catch(err => console.log(err))
+  .then((data) => console.log(data))
+  .catch((err) => console.log(err))
